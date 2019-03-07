@@ -90,7 +90,6 @@ void s_rest(struct syntax_node *&n) {
 
 void parse() {
 	s_assignment(syntax_tree_root);
-	next();
 	if (type != T_NULL) {
 		panic();
 	}
